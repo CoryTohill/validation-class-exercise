@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+  <fieldset>
+  <legend>Applicant Information</legend>
+  <label for="firstName">First Name:</label>
+  <input type="text"  name="firstName" placeholder="Type first name here"></input>
+  <br>
+  <label for="midInitial">Middle Initial:</label>
+  <input type="text"  name="midInitial" placeholder="Type middel initial here"></input>
+  <br>
+  <label for="lastName">Last Name:</label>
+  <input type="text"  name="lastName" placeholder="Type last name here"></input>
+  <br>
+  <label for="address">Address:</label>
+  <input type="text"  name="address" placeholder="Type address here"></input>
+  <br>
+  <label for="occupation">Occupation:</label>
+  <input type="text"  name="occupation" placeholder="Type occupation here"></input>
+  <br>
+  <label for="employer">Employer:</label>
+  <input type="text"  name="employer" placeholder="Type employer here"></input>
+  <br>
+  <label for="employerAddress">Employer Address:</label>
+  <input type="text"  name="employerAddress" placeholder="Type employer address here"></input>
+
+  </fieldset>
+  <fieldset>
+    <legend>Loan Type</legend>
+    <input name="loan" list="loanType" placeholder="Select loan type"></input>
+    <datalist id="loanType">
+      <option value="Commercial">
+      <option value="Real estate">
+      <option value="Personal">
+      <option value="Mortgage">
+    </datalist>
+  </fieldset>
+  <fieldset>
+    <legend>Amount</legend>
+    <label for="amount">Amount of loan requested:</label>
+    <input type="number" name="amount" step="5000" min="5000" max="50000" placeholder="Dollars"></input>
+  </fieldset>
+  <fieldset>
+  <legend>Length of Loan</legend>
+  <input type="radio" name="years" value="years5">5 years</input>
+  <input type="radio" name="years" value="years10">10 years</input>
+  <input type="radio" name="years" value="years15">15 years</input>
+  </fieldset>
+  <fieldset>
+    <legend>Special Conditions</legend>
+    <input type="checkbox" name="down" value="downPayment">I have a down payment</input>
+    <input type="checkbox" name="resident" value="outOfState">Out-of-state resident</input>
+    <input type="checkbox" name="marriage" value="marriageStatus">Married</input>
+    <input type="checkbox" name="cosign" value="cosigner">Loan will be co-signed</input>
+  </fieldset>
+  <fieldset>
+    <legend>Feedback</legend>
+    <label for="feedback">Comments:</label>
+    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Write comments here"></textarea>
+  </fieldset>
+  <fieldset>
+    <legend>Additional Contact Information</legend>
+    <label for="email">Email:</label>
+    <input type="email" name="email" placeholder="email@example.com"></input>
+    <br>
+    <label for="phone">Phone number:</label>
+    <input type="tel" name="phone" placeholder="888-888-8888" pattern="\d{10}"></input>
+    <br>
+    <label for="linked">LinkedIn URL:</label>
+    <input type="url" name="linked" placeholder="Type URL here"></input>
+  </fieldset>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

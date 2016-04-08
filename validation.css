@@ -1,0 +1,13 @@
+input[type=email],
+input[type=phone],
+input[type=url]{
+  -webkit-appearance: none;
+}
+
+input:invalid{
+  color: red;
+}
+
+input:valid{
+  color: green;
+}
