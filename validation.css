@@ -1,13 +1,16 @@
-input[type=email],
-input[type=phone],
-input[type=url]{
-  -webkit-appearance: none;
-}
+/*changes fields to green when info entered correctly and red when incorrect*/
 
 input:invalid{
-  color: red;
+  background-color: red;
 }
 
 input:valid{
-  color: green;
+  background-color: green;
+}
+
+/*changes unwanted fields back to white*/
+input[type=text],
+input[name=loan],
+input[type=number] {
+  background-color: white;
 }
